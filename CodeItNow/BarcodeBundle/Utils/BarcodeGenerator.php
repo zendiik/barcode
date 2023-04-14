@@ -333,7 +333,7 @@ class BarcodeGenerator extends BarcodeType {
      */
     private function _getFormat(){
         $format = '';
-        switch(strtoupper($this->format)){
+        switch(strtoupper((string) $this->format)){
             case 'PNG':
                 $format = CINDrawing::IMG_FORMAT_PNG;
                 break;
