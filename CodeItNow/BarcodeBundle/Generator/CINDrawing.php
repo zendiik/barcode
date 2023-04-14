@@ -8,7 +8,7 @@
  *--------------------------------------------------------------------
  * @author  Akhtar Khan <er.akhtarkhan@gmail.com>
  * @link http://www.codeitnow.in
- * @package https://github.com/codeitnowin/barcode-generator   
+ * @package https://github.com/codeitnowin/barcode-generator
  */
 namespace CodeItNow\BarcodeBundle\Generator;
 use CodeItNow\BarcodeBundle\Generator\CINBarcode;
@@ -39,7 +39,7 @@ class CINDrawing {
      * @param string filename
      * @param CINColor $color
      */
-    public function __construct($filename = null, CINColor $color) {
+    public function __construct(CINColor $color, $filename = null) {
         $this->im = null;
         $this->setFilename($filename);
         $this->color = $color;
